@@ -1,0 +1,19 @@
+# PDF reading
+pymupdf
+
+# Embeddings (all-MiniLM-L12-v2) - also installs torch
+sentence-transformers
+numpy
+
+# Vector storage and search
+chromadb
+faiss-cpu
+
+# Added later, when you build src/qa.py. Install the one for your LLM:
+# openai
+# anthropic
+# google-generativeai
+
+# Optional: OCR for scanned PDFs (also needs the Tesseract program installed)
+# pytesseract
+# pillow
