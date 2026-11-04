@@ -9,7 +9,10 @@ what chunk_pages() in chunking.py expects.
 import re
 from pathlib import Path
 
-import fitz  # PyMuPDF
+try:
+    import pymupdf as fitz  # PyMuPDF (new name)
+except ImportError:
+    import fitz  # PyMuPDF (older versions)
 
 
 def clean_text(text):
